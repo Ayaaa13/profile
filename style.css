@@ -1,0 +1,30 @@
+* {
+    font-family: Poppins, sans-serif;
+}
+
+li {
+    cursor: pointer;
+}
+.change{
+    color: blue;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    animation: day-to-night 2s linear;
+  }
+  
+  @keyframes day-to-night {
+    0% {
+      background-image: url("sun.jpg");
+      left: 0;
+    }
+    100% {
+      background-image: url("moon.jpg");
+      left: 100%;
+    }
+  }
